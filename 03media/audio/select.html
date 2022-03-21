@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul>li#name+li{
+      background-color: orange;
+    }
+    ul>li#name~li{
+      color: green;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <ul>
+    <li>sample01</li>
+    <li id="name">sample02</li>
+    <li>sample03</li>
+    <li>sample04</li>
+    <li>sample05</li>
+    <li>sample06</li>
+  </ul>
+ </div> 
+</body>
+</html>

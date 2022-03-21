@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>video</title>
+<style>
+  @import url('./css/sample02.css');
+</style>
+</head>
+
+<body>
+<!--기본형태-->
+<h1 id="main">기본형태</h1>
+<p>
+<video 
+    src="./video/puppy.mp4"
+    autoplay
+    controls
+    loop
+    muted
+    preload="auto"
+    width="500">
+></video>
+<!-- 크롬: autoplay 위해 muted가 필요 -->
+</p>
+
+<!--source사용-->
+<h1>기본형태2</h1>
+<p>
+<video controls muted preload="metadata" poster="./img/puppy.jpg">
+  <source src="./video/puppy.mp4" type="video/mp4">
+  <Source src="./video/puppy.webm" type="video/webm">
+  <track src="./video/video-subtitles-en.vtt" kind="subtitles" label="영어" srclang="en">
+</video>
+</p>
+</body>
+</html>
+
+
+
+
+
+
+
